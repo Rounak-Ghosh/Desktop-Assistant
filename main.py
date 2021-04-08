@@ -53,7 +53,9 @@ def run_google():
         print('Playing' + song)
         pywhatkit.playonyt(song)
     elif 'joke' in command:
-        talk(pyjokes.get_joke())
+        joke = pyjokes.get_joke()
+        print(joke)
+        talk(joke)
     elif 'created' and 'you' in command:
         talk('I was programmed by Rounak Ghosh.')
 
